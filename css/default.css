@@ -1,0 +1,479 @@
+
+/*projecto de teste
+nome do projecto: Mostarda blog 
+empresa: Mostarda Tec
+Desenvolvedors: Alexandre e Ngoma
+versao: 0.0
+linguagem de marcacao: Html 5
+liguagem de estilo:Css3
+java script.
+*/ 
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-B';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExB';
+    src: url('fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Martel';
+    src: url('fonts/Martel-Regular.ttf');
+}
+
+
+
+/* reset */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*inicializacao*/
+body {
+    font: normal 12pt 'Montserrat';
+    color: #dddddd;
+    background-color: #454545;
+/*    line-height: 38px;*/
+}
+
+h1{
+    font-family: "Montserrat";
+    font-size: 24pt;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-family: "Montserrat";
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: "Montserrat";
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-family: "Montserrat";
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+
+
+
+.margin{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  header  */
+
+
+.logo h1 {
+    width: 80px;
+    margin-top: 25px;
+    float:left;
+}
+
+.logo img {
+   width: 100%;
+}
+
+.logo label{
+    display: block;
+    width: 45px;
+    float: right;
+    margin-top: 30px;
+    position: relative;
+    z-index: 100;
+    background-color: #555555;
+    padding: 12px 15px 10px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#check-menu {
+    display: none;
+}
+
+#check-menu + ul {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: -100vw;
+
+    background: #454545;
+    padding: 100px 20%;
+    transition: .3s;
+}
+
+#check-menu:checked + ul {
+    left: 0;
+}
+
+#check-menu + ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#check-menu + ul .activo a {
+    color: yellow;
+}
+
+#check-menu + ul .activo .la {
+    color: #8a8a0b;
+}
+
+#check-menu + ul a {
+    font-size: 16pt;
+    color: #dddddd;
+    transition: .3s;
+}
+
+#check-menu + ul li:hover a {
+    color: yellow;
+}
+
+#check-menu + ul .la {
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+
+#check-menu + ul li:hover .la {
+    color: #8a8a0b;
+}
+
+#check-menu + ul a {
+    font-size: 16pt;
+}
+
+header nav{
+    clear: both;
+    border-bottom: 1px solid #8f8f8f;
+    margin-bottom: 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+
+
+
+
+
+
+
+
+/*    art-list    */
+
+.art-list > h2 {
+    font-family: "Montserrat-B";
+    margin-bottom: 30px;
+}
+
+.art-list article{
+    width: 100%;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.art-list article:hover{
+    background-color: #555555;
+}
+
+.art-list article a {
+    text-decoration: none;
+}
+
+.art-list article:hover h1{
+    color: yellow;
+}
+
+.art-list article img {
+    width: 100%;
+}
+
+section h2{
+    margin-bottom: 15px;
+}
+
+
+.art-list article h1{
+    color:#dddddd;
+    font-size: 16pt;
+    padding: 0 8px;
+    margin-bottom: 5px;
+}
+
+.art-list div ul {
+    padding: 0 8px 10px;
+}
+
+.art-list div ul li {
+    list-style: none;
+    color:#8f8f8f;
+}
+
+.art-list div ul li a{
+    color:#8f8f8f;
+    text-decoration: none;
+}
+
+.art-list div ul li a:hover{
+    color:green;
+}
+
+
+
+
+
+
+
+
+
+
+/*  footer */
+
+footer{
+    background-color:#555555;
+    margin-top: 80px;
+}
+
+.foo-logo {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.foo-logo img {
+    filter: grayscale(100%);
+    width: 150px;
+    transition: .3s;
+}
+
+.foo-logo:hover img {
+    filter: grayscale(0%);
+}
+
+.foo-logo p {
+    transition: .3s;
+}
+
+.foo-logo:hover p {
+    color: yellow;
+}
+
+.foo-copy {
+    padding-bottom: 30px;
+}
+
+.foo-copy .la-copyright {
+    font-size: 18pt;
+}
+
+
+
+
+
+
+
+
+
+@media(min-width:600px){
+
+    .art-list article{
+        clear: both;
+        overflow: auto;
+    }
+
+    .art-list article img {
+        width: 100%;
+    }
+
+
+    section article figure{
+        float: left;
+        width: 25%;
+        margin-right: 2%;
+    }
+
+    section article div{
+        float: left;
+        width: 73%;
+        margin-bottom: 10px;
+    }
+
+    .art-list div ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .art-list div ul li:last-child {
+        margin-right: 0;
+    }
+
+    .categories {
+        clear: both;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media(min-width:800px) {
+
+
+    .logo h1 {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        float:none;
+    }
+
+    .logo label{
+        margin-top: 30px;
+        position: static;
+        z-index: 0;
+        display: none;
+    }
+
+    #check-menu + ul {
+        width: auto;
+        height: auto;
+        position: static;
+        background: none;
+        padding: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #check-menu + ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #check-menu + ul .la {
+        margin-right: 5px;
+    }
+
+    #check-menu + ul a {
+        font-size: 14pt;
+    }
+
+    header nav{
+        clear: both;
+        border-bottom: none;
+        background-color: #555555;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media(min-width:950px){
+
+    .art-list > h2 {
+        font-size: 26pt;
+    }
+
+    .art-list article div{
+        padding-top: 20px;
+        width: 73%;
+    }
+
+
+    section article figure{
+        width: 200px;
+    }
+
+
+    .art-list article h1{
+        font-size: 20pt;
+        margin-bottom: 15px;
+    }
+
+    /*  footer  */
+
+    footer {
+        overflow: auto;
+    }
+
+    .foo-logo {
+        width: 48%;
+        float: left;
+    }
+
+    .foo-logo img {
+        width: 23%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .foo-logo div {
+        width: 68%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .foo-copy {
+        width: 325px;
+        float: right;
+        margin-top: 50px;
+    }
+
+}
+
