@@ -1,0 +1,174 @@
+
+/*contactos css*/
+
+
+/*cont-hp*/
+
+
+.cont-hp h2 {
+	font-family: Montserrat-ExB;
+	font-size: 26pt;
+}
+
+.cont-hp ul li  a {
+	font-size: 14pt;
+
+	color: #dddddd;
+	text-decoration: none;
+	list-style: none;
+	display: block;
+	clear: both;
+}
+
+.cont-hp ul li {
+	list-style: none;
+	margin-top: 15px;
+}
+
+.cont-hp div {
+	padding-top: 20px;
+}
+
+.cont-hp span{
+	font-size: 12pt;
+	color: #8f8f8f;
+}
+
+.cont-hp p {
+	font-family: 'Martel';
+	font-size: 16pt;
+}
+
+.cont-hp li i{
+	margin-top: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #555555;
+	padding: 20px 0 0 20px;
+	float: left;
+	margin-right: 10px;
+	font-size: 24pt;
+}
+
+.cont-hp >p{
+	color: #8f8f8f;
+	font-size: 12pt;
+}
+
+
+
+
+
+
+
+
+/*formulary*/
+
+.formulary h2 {
+	margin-top: 5px;
+	font-size: 18pt;
+}
+
+.formulary p {
+	margin-bottom: 10px;
+	color: #8f8f8f;
+}
+
+
+.formulary {
+	background-color: #454545;
+	border: 1px solid #555555;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+.formulary label{
+	display: none;
+}
+
+.formulary input{
+	font-family: "Montserrat";
+	font-size: 12pt;
+	width: 100%;
+	margin-bottom: 10px;
+	border: none;
+	background-color: #8f8f8f8f;
+	padding: 10px;
+}
+
+.formulary textarea {
+	font-family: "Montserrat";
+	font-size: 12pt;
+	width: 100%;
+	margin-bottom: 8px;
+	background-color: #8f8f8f8f;
+	border: none;
+	padding: 10px;
+}
+
+.formulary button {
+	background:linear-gradient(to right, green, yellow);
+	width: 130px;
+	height: :100px;
+	border: none;
+	padding: 12px 10px;
+	color: white;
+	transition: .3s;
+	cursor: pointer;
+	font-family: "Montserrat";
+	font-size: 14pt;
+}
+
+.formulary button:hover {
+	background: yellow;
+	color: green;
+}
+
+
+
+@media(min-width:600px){
+
+	main{
+		overflow: auto;
+	}
+
+	.cont-hp{
+		width: 45%;
+		float: left;
+	}
+
+	.formulary {
+		width: 50%;
+		float:right;
+		padding: 20px;
+		margin-top: 120px;
+	}
+
+	footer{
+		clear: both;
+	}
+
+
+}
+
+
+
+
+@media(min-width:900px){
+	
+	.cont-hp li {
+		margin-bottom: 30px;
+	}
+	
+	.cont-hp li i{
+		margin-right: 25px;
+	}
+
+
+	.formulary {
+		width: 55%;
+		padding: 30px;
+	}
+
+}
